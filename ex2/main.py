@@ -10,9 +10,11 @@ from utils import test, results
 # Le diagramme de la classe est disponible dans le fichier Diagramme.png
 # Il est possible d'ajouter des attributs et méthodes au besoin.
 class CompteBancaire:
+
     titulaire: str
     solde: float = 0
     canRetirer: bool = False
+
     def __init__(self, titulaire: str):
         self.titulaire = titulaire
 

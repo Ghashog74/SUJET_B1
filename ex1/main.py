@@ -12,12 +12,11 @@ from utils import test, results
 # voyelles dans cette chaine.
 # Elle devra retourner un dictionnaire ayant comme clés les voyelles (a, e, i, o, u, y) en minuscules et en valeur le
 # compte de chaque voyelle. La fonction ne doit pas être sensible à la casse.
-voyelles = ["a", "e", "i", "o", "u", "y"]
 def compterVoyelles(chaine: str):
     chaine = chaine.lower()
     result = {"a":0, "e":0, "i":0, "o":0, "u":0, "y":0}
     for lettre in chaine:
-        if lettre in voyelles:
+        if lettre in result:
             result[lettre] += 1
     return result
 
